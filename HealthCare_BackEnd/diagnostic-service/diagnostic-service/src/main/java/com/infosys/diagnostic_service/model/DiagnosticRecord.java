@@ -1,0 +1,127 @@
+package com.infosys.diagnostic_service.model;
+
+import java.time.LocalDateTime;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
+
+
+@Document(collection = "diagnostic_records")
+public class DiagnosticRecord {
+
+    @Id
+    private String id;
+
+    private String patientId;
+
+    // Heart Disease Dataset Features
+    private int cp;
+    private double chol;
+    private int fbs;
+    private int restecg;
+    private int exang;
+    private double oldpeak;
+    private int slope;
+    private int ca;
+    private int thal;
+
+    // Metadata
+    private String source;          // MANUAL, LAB_API, FHIR
+    private String recordedBy;      // Doctor, Lab, System
+
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getPatientId() {
+		return patientId;
+	}
+	public void setPatientId(String patientId) {
+		this.patientId = patientId;
+	}
+	public int getCp() {
+		return cp;
+	}
+	public void setCp(int cp) {
+		this.cp = cp;
+	}
+	public double getChol() {
+		return chol;
+	}
+	public void setChol(double chol) {
+		this.chol = chol;
+	}
+	public int getFbs() {
+		return fbs;
+	}
+	public void setFbs(int fbs) {
+		this.fbs = fbs;
+	}
+	public int getRestecg() {
+		return restecg;
+	}
+	public void setRestecg(int restecg) {
+		this.restecg = restecg;
+	}
+	public int getExang() {
+		return exang;
+	}
+	public void setExang(int exang) {
+		this.exang = exang;
+	}
+	public double getOldpeak() {
+		return oldpeak;
+	}
+	public void setOldpeak(double oldpeak) {
+		this.oldpeak = oldpeak;
+	}
+	public int getSlope() {
+		return slope;
+	}
+	public void setSlope(int slope) {
+		this.slope = slope;
+	}
+	public int getCa() {
+		return ca;
+	}
+	public void setCa(int ca) {
+		this.ca = ca;
+	}
+	public int getThal() {
+		return thal;
+	}
+	public void setThal(int thal) {
+		this.thal = thal;
+	}
+	public String getSource() {
+		return source;
+	}
+	public void setSource(String source) {
+		this.source = source;
+	}
+	public String getRecordedBy() {
+		return recordedBy;
+	}
+	public void setRecordedBy(String recordedBy) {
+		this.recordedBy = recordedBy;
+	}
+	public LocalDateTime getCreatedAt() {
+		return createdAt;
+	}
+	public void setCreatedAt(LocalDateTime createdAt) {
+		this.createdAt = createdAt;
+	}
+	public LocalDateTime getUpdatedAt() {
+		return updatedAt;
+	}
+	public void setUpdatedAt(LocalDateTime updatedAt) {
+		this.updatedAt = updatedAt;
+	}
+    
+}

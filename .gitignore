@@ -1,0 +1,140 @@
+# ==============================
+# Java / Spring Boot
+# ==============================
+
+target/
+*.class
+*.log
+
+# Maven
+.mvn/timing.properties
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# ==============================
+# Spring Boot Configuration
+# ==============================
+
+# Ignore local configuration containing passwords/API keys
+application-local.properties
+application-secret.properties
+application-dev.properties
+
+# Spring Boot local secrets
+**/src/main/resources/application.properties
+**/src/main/resources/application-local.properties
+**/src/main/resources/application-secret.properties
+
+# If your application.properties contains secrets, ignore it too
+# application.properties
+
+# ==============================
+# Environment / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.p12
+*.jks
+
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.mypy_cache/
+
+# ==============================
+# Python ML Models
+# ==============================
+
+*.h5
+*.hdf5
+*.keras
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.pb
+
+# TensorFlow
+saved_model/
+saved_model/**
+variables/
+variables/**
+
+# ==============================
+# ML / AI Datasets
+# ==============================
+
+datasets/
+dataset/
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# ==============================
+# Jupyter
+# ==============================
+
+.ipynb_checkpoints/
+
+# ==============================
+# Python generated files
+# ==============================
+
+*.egg-info/
+dist/
+build/
+
+# ==============================
+# Node / React
+# ==============================
+
+node_modules/
+dist/
+build/
+.npm/
+*.tsbuildinfo
+
+# ==============================
+# Logs
+# ==============================
+
+logs/
+*.log
+
+# ==============================
+# OS
+# ==============================
+
+.DS_Store
+Thumbs.db

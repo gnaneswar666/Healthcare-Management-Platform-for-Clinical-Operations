@@ -1,0 +1,10 @@
+tensorflow
+numpy
+pandas
+scikit-learn
+matplotlib
+joblib
+flask
+flask-cors
+shap
+pymongo
